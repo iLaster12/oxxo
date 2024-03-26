@@ -10,8 +10,6 @@
     <!--additional links and meta zone -->
     
 
-
-    
     <!--additional links and meta zone-->
 
 
@@ -28,17 +26,17 @@
 
 
         <!--Page title-->
-        <div id="main-container">
-            <div id="header">
-                <div id="title"><h2>Consultas</h2></div>
-                <div id="logo"><img src="assets/images/Femsa_Logo.png" alt=""></div>
-            </div>
+        <div id="main-header">
+            <div id="title"><h2>Consultas</h2></div>
+            <div id="logo"><img src="assets/images/Femsa_Logo.png" alt=""></div>
         </div>
 
         <!--Table-->
         <div id="query-table">
             <!--Filters-->
             <div id="controls">
+
+                <h1>hola</h1>
 
             </div>
             
