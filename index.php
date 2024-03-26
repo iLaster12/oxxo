@@ -12,7 +12,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=031.0">
     <link rel="stylesheet" href="./assets/css/login.css">
     <title>OXXO</title>
 </head>
@@ -20,7 +20,7 @@
         <div class='login_container'>
         
             <div class="logo">
-                <img src="images/Femsa_Logo.png" alt="">
+                <img src="assets/images/Femsa_Logo.png" alt="">
             </div>
 
             <form method="post" action="php/userLogin.php">
