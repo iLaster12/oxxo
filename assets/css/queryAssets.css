@@ -1,15 +1,14 @@
-#main-header{
-    position: fixed;
-    width: 100%;
+.main-header{
+    display: block;
+    width: calc(100% - 20px);
     height: 100px;
     padding: 20px 0;
     z-index: 2;
     border-bottom: solid 3px black;
-    
 }
 
-#main-header #title,
-#main-header #logo{
+.main-header #title,
+.main-header #logo{
     position: sticky;
     width: 20%;
     vertical-align: middle;
@@ -17,7 +16,7 @@
     padding: var(--padding) 0;
 }
 
-#main-header #title{
+.main-header #title{
     left: 5%;
     height: 100%;
     font-size: 30px;
@@ -25,42 +24,43 @@
     box-sizing: border-box;
 }
 
-#main-header #title h2{
+.main-header #title h2{
     margin: 10px;
 }
 
-#main-header #logo{
+.main-header #logo{
     left: 80%;
     box-sizing: border-box;
     margin-right: 20px;
     height: 100%;
 }
 
-#main-header #logo img{
+.main-header #logo img{
     height: 100%;
 }
 
-#query-table{
-    position: fixed;
-    padding-top: 150px;
-    padding-left: 40px;
-    width: 100%;
+.query-table{
+    display: block;
+    padding-top: 50px;
+    width: calc(100% - 20px);
     height: 100%;
     z-index: 1;
 }
 
-#query-table #controls{
+
+.query-table #controls{
     vertical-align: middle;
     display: inline-block;
     width: 100%;
     height: 100px;
+    padding-left: 20px;
 }
 
-#query-table #controls h3{
+.query-table #controls h3{
     width: 100px;
 }
 
-#query-table #controls button{
+.query-table #controls button{
     border-color: none;
     width: 50px;
     height: 50px;
@@ -69,35 +69,52 @@
     border-radius: 50%;
 }
 
-#query-table #controls input{
+.query-table #controls input{
     width: 150px;
 }
 
-#query-table #controls input,
-#query-table #controls h3,
-#query-table #controls #search,
-#query-table #controls #clean{
+.query-table #controls input,
+.query-table #controls h3,
+.query-table #controls #search,
+.query-table #controls #clean{
     margin: 20px 0;
     vertical-align: middle;
     display: inline-block;
 }
 
-#query-table #controls #search,
-#query-table #controls #clean{
+.query-table #controls #search,
+.query-table #controls #clean{
     margin-right: 5px;
     vertical-align: middle;
     display: inline-block;
 }
 
-#query-table #controls input{
+.query-table #controls input{
     margin-left: 5px;
     margin-right: 40px;
 }
 
-#query-table #controls #search img,
-#query-table #controls #clean img{
+.query-table #controls #search img,
+.query-table #controls #clean img{
     border-radius: 50%;
     width: 100%;
     text-align: center;
     vertical-align: middle;
+}
+
+.query-table #content-table{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.query-table #content-table table,
+.query-table #content-table th,
+.query-table #content-table td{
+    border: 1px solid;
+}
+
+.query-table #content-table table{
+    width: 100%;
+    border-collapse: collapse;
 }

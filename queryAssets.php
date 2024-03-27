@@ -27,13 +27,13 @@
 ?>
 
         <!--Page title-->
-        <div id="main-header">
+        <div id="control-header" class="main-header">
             <div id="title"><h2>Consultas</h2></div>
             <div id="logo"><img src="assets/images/Femsa_Logo.png" alt=""></div>
         </div>
 
         <!--Table-->
-        <div id="query-table">
+        <div id="control-table" class="query-table">
             <!--Filters-->
             <div id="controls">
 
@@ -48,7 +48,19 @@
             
             <!--Content-->
             <div id="content-table">
+                <table>
+                    <thead>
+                        <th>Codigo</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Descripcion</th>
+                        <th>Cantidad</th>
+                    </thead>
 
+                    <tbody id="content">
+
+                    </tbody>
+                </table>
 
 
             </div>

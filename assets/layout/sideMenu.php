@@ -74,11 +74,23 @@
         <script>
                 const btn = document.querySelector('#menu-btn');
                 const menu = document.querySelector('#sidemenu');
+                const mainHeader = document.querySelector('#control-header');
+                const queryTable = document.querySelector('#control-table');
 
                 btn.addEventListener('click', e =>{
                     menu.classList.toggle("menu-expanded");
                     menu.classList.toggle("menu-collapsed");
 
                     document.querySelector('body').classList.toggle('body-expanded');
+                });
+
+                btn.addEventListener('click', e =>{                    
+                    mainHeader.classList.toggle("main-header");
+                    mainHeader.classList.toggle("main-header-expanded");
+                });
+
+                btn.addEventListener('click', e =>{                    
+                    queryTable.classList.toggle("query-table");
+                    queryTable.classList.toggle("query-table-expanded");
                 });
         </script>
