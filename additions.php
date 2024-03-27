@@ -27,7 +27,7 @@
 
         <!--Page title-->
         <div id="control-header" class="main-header">
-            <div id="title"><h2>Consultas</h2></div>
+            <div id="title"><h2>Altas</h2></div>
             <div id="logo"><img src="assets/images/Femsa_Logo.png" alt=""></div>
         </div>
 
