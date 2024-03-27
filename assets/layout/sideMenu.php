@@ -2,8 +2,6 @@
 <!--
     lateral menu
 -->
-
-    <body>
         <menu id = "sidemenu" class = "menu-expanded">
 
         <!--header-->

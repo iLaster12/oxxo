@@ -16,7 +16,8 @@
 
 
     <title>OXXO</title>
-</head>
+    </head>
+    <body>
 
 <!--
     Lateral menu load

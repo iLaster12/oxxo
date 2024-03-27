@@ -14,7 +14,8 @@
 
 
     <title>OXXO</title>
-</head>
+    </head>
+    <body>
 
 <!--
     Lateral menu load
@@ -23,7 +24,6 @@
 <?php 
     require('./assets/layout/sideMenu.php')
 ?>
-
 
         <!--Page title-->
         <div id="main-header">
@@ -45,9 +45,5 @@
 
             </div>
         </div>
-
-
-
-
     </body>
 </html>
