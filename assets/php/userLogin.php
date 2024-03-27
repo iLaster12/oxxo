@@ -14,7 +14,7 @@
 
     if(mysqli_num_rows($loginValidation) > 0){
         $_SESSION['user'] = $uname;
-        header("location: ../queryAssets.php");
+        header("location: ../../queryAssets.php");
         exit;
     }else{
         echo '

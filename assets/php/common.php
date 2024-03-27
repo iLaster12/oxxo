@@ -1,6 +1,6 @@
 <?php
 
-    include("./php/dbConnection.php");
+    include("dbConnection.php");
 
     $uname = ($_SESSION['user']);
     $query = "SELECT FirstName FROM internalusers WHERE EmployeeNumber = '$uname'";

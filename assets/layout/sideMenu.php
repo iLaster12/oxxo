@@ -61,7 +61,7 @@
                     </a>
                 </div>
                 <div class="item" id="close-sesion">
-                    <a href="./php/closeSesion.php">
+                    <a href="./assets/php/closeSesion.php">
                         <div class="icon"><img src="./assets/images/logout_icon.png" alt=""></div>
                         <div class="title"><span>Cerrar sesion</span></div>
                     </a>

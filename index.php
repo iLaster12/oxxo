@@ -23,7 +23,7 @@
                 <img src="assets/images/Femsa_Logo.png" alt="">
             </div>
 
-            <form method="post" action="php/userLogin.php">
+            <form method="post" action="./assets/php/userLogin.php">
                 <div class="container">
                     <label for="uname"><b>Nombre de usuario</b></label>
                     <input type="text" placeholder="Correo/Numero de cliente" name="uname" required>
