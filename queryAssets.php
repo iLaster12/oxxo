@@ -36,13 +36,17 @@
         <div id="control-table" class="query-table">
             <!--Filters-->
             <div id="controls">
+                <form action="" method="post">
 
-                <h3>Codigo:</h3>
+                    <h3>Codigo:</h3>
 
-                <input type="text" placeholder="Codigo" name="codigo" required>
-
-                <button type="submit" id="search"><img src="assets/images/search_icon.png" alt=""></button>
-                <button type="submit" id="clean"><img src="assets/images//clear_icon.jpg" alt=""></button>
+                    <input id="codigo" type="text" placeholder="Codigo" name="codigo">
+                    
+                    <!-- Pendientes de implementacion
+                    <button type="submit" id="search"><img src="assets/images/search_icon.png" alt=""></button>
+                    <button type="submit" id="clean"><img src="assets/images//clear_icon.jpg" alt=""></button>
+                    -->
+                </form>
 
             </div>
             
@@ -65,5 +69,33 @@
 
             </div>
         </div>
+
+        <script>
+
+            getData()
+
+            document.getElementById("codigo").addEventListener("keyup", getData)
+
+            function getData(){
+                let input = document.getElementById("codigo").value;
+                let contet = document.getElementById("content")
+
+                let url = "assets/php/load.php"
+
+                let formData = new FormData()
+                formData.append('codigo', input)
+
+                fetch(url, {
+                    method: "POST",
+                    body: formData
+                }).then(response => response.json())
+                .then(data => {
+                    contet.innerHTML = data
+                }).catch(err => console.log(err))
+
+            }
+
+        </script>
+
     </body>
 </html>
