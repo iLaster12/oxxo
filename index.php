@@ -26,7 +26,7 @@
             <form method="post" action="./assets/php/userLogin.php">
                 <div class="container">
                     <label for="uname"><b>Nombre de usuario</b></label>
-                    <input type="text" placeholder="Correo/Numero de cliente" name="uname" required>
+                    <input type="text" placeholder="Correo" name="uname" required>
                     
                     <label for="psw"><b>Contraseña</b></label>
                     <input type="password" placeholder="Contraseña" name="psw" required>

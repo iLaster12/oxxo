@@ -36,7 +36,7 @@
         <div id="control-table" class="query-table">
             <!--Filters-->
             <div id="controls">
-                <form action="" method="post">
+                <form action="assets/php/assetsLoad.php" method="post">
 
                     <h3>Codigo:</h3>
 
