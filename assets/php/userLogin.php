@@ -11,12 +11,7 @@
     $psw = isset($_POST['psw']) ? $connection ->real_escape_string($_POST['psw']) : null;
     $hash = hash('sha256', $psw);
 
-    //User Validation
-    if(is_valid_email($uname)){
-        $query = "SELECT * FROM externalusers WHERE Email = '$uname' AND Hash = '$hash'";
-    }else{
-        $query = "SELECT * FROM internalusers WHERE EmployeeNumber = '$uname' AND Hash = '$hash'";
-    }
+    $query = "SELECT * FROM users WHERE username = '$uname' AND hash = '$hash'";
 
     //User authentification
     $loginValidation = mysqli_query($connection, $query);
