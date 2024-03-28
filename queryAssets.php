@@ -80,7 +80,7 @@
                 let input = document.getElementById("codigo").value;
                 let contet = document.getElementById("content")
 
-                let url = "assets/php/load.php"
+                let url = "assets/php/assetsLoad.php"
 
                 let formData = new FormData()
                 formData.append('codigo', input)
