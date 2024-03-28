@@ -7,15 +7,15 @@
 
     $input = isset($_POST['codigo']) ? $connection ->real_escape_string($_POST['codigo']) : null;
 
-    $where = '';
+    $where = 'WHERE';
 
     if($input != null) {
-        $where = " WHERE code like '%".$input."%'";        
+        $where .= " code like '%".$input."%' AND";        
     }
 
     $sql = "SELECT " . implode(", ", $colums) . "
             FROM $table
-            $where";
+            $where isdeleted = 0";
 
     $result = $connection -> query($sql);
     $num_rows = $result -> num_rows;
