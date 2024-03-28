@@ -5,7 +5,7 @@
     $colums = ['Code', 'Brand', 'Model', 'Description', 'Remaining'];
     $table = 'assets';
 
-    $input = isset($_POST['codigo']) ? $connection ->real_escape_string($_POST['codigo']) : null;
+    $input = isset($_POST['assets-code']) ? $connection ->real_escape_string($_POST['assets-code']) : null;
 
     $where = 'WHERE';
 

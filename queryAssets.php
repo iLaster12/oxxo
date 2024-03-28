@@ -40,7 +40,7 @@
 
                     <h3>Codigo:</h3>
 
-                    <input id="codigo" type="text" placeholder="Codigo" name="codigo">
+                    <input id="assets-code" type="text" placeholder="Codigo" name="assets-code">
                     
                     <!-- Pendientes de implementacion
                     <button type="submit" id="search"><img src="assets/images/search_icon.png" alt=""></button>
@@ -74,16 +74,16 @@
 
             getData()
 
-            document.getElementById("codigo").addEventListener("keyup", getData)
+            document.getElementById("assets-code").addEventListener("keyup", getData)
 
             function getData(){
-                let input = document.getElementById("codigo").value;
+                let input = document.getElementById("assets-code").value;
                 let contet = document.getElementById("content")
 
                 let url = "assets/php/assetsLoad.php"
 
                 let formData = new FormData()
-                formData.append('codigo', input)
+                formData.append('assets-code', input)
 
                 fetch(url, {
                     method: "POST",
