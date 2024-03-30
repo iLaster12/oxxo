@@ -54,7 +54,8 @@
 }
 
 .query-table #controls #search img,
-.query-table #controls #clean img{
+.query-table #controls #clean img,
+.query-table #controls #add img{
     border-radius: 50%;
     width: 100%;
     text-align: center;
@@ -76,4 +77,9 @@
 .query-table #content-table table{
     width: 100%;
     border-collapse: collapse;
+    text-align: center;
+}
+
+.query-table #content-table table #content tr td{
+    text-align: center;
 }

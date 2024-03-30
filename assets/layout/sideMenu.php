@@ -29,6 +29,7 @@
                         <div class="icon"><img src="./assets/images/query_icon.png" alt=""></div>
                         <div class="title"><span>Consultas</span></div>
                     </a>
+                <!--
                 </div>
                 <div class="item">
                     <a href="additions.php">
@@ -48,6 +49,7 @@
                         <div class="title"><span>Cambios</span></div>
                     </a>
                 </div>
+                -->
                 <div class="item">
                     <a href="transfers.php">
                         <div class="icon"><img src="./assets/images/traspaso_icon.png" alt=""></div>

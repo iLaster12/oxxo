@@ -7,22 +7,14 @@
 
     $input = isset($_POST['assets-code']) ? $connection ->real_escape_string($_POST['assets-code']) : null;
 
-    $where = 'WHERE';
-
-    if($input != null) {
-        $where .= " code like '%".$input."%' AND";        
-    }
-
-    $sql = "SELECT " . implode(", ", $colums) . "
-            FROM $table
-            $where isdeleted = 0";
+    $sql = "SELECT * FROM $table WHERE code = $input AND isdeleted = 0" ;
 
     $result = $connection -> query($sql);
     $num_rows = $result -> num_rows;
 
     $html = '';
 
-    if ($num_rows > 0) {
+    if ($input != null && $num_rows > 0) {
         while( $row = $result -> fetch_assoc()){
         $html .= '<tr>';
         $html .= '<td>'.$row['Code'].'</td>';
@@ -30,11 +22,13 @@
         $html .= '<td>'.$row['Model'].'</td>';
         $html .= '<td>'.$row['Description'].'</td>';
         $html .= '<td>'.$row['Remaining'].'</td>';
+        $html .= '<td><button>Eliminar</td>';
+        $html .= '<td><button>Cambiar</td>';
         $html .= '</tr>';
         }
     }else{
         $html .= '<tr>';
-        $html .= '<td colspan = "7">Sin Resultados</td>';
+        $html .= '<td colspan = "6">Sin Resultados</td>';
         $html .= '</tr>';
     }
 
