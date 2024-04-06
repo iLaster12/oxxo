@@ -19,13 +19,13 @@
     //Login Error
     if(mysqli_num_rows($loginValidation) > 0){
         $_SESSION['user'] = $uname;
-        header("location: ../../additions.php");
+        header("location: ../../queryAssets.php");
         exit;
     }else{
         echo '
             <script>
                 alert("Usuario y/o Contraseña equivocados");
-                window.location = "../index.php"
+                window.location = "../../index.php"
             </script>
         ';
         exit;

@@ -58,6 +58,7 @@
                         <th>Modelo</th>
                         <th>Descripcion</th>
                         <th>Cantidad</th>
+                        <th>Acciones</th>
                     </thead>
 
                     <tbody id="content">

@@ -2,7 +2,6 @@
     display: block;
     padding-top: 50px;
     width: calc(100% - 20px);
-    height: 100%;
     z-index: 1;
 }
 
@@ -82,4 +81,8 @@
 
 .query-table #content-table table #content tr td{
     text-align: center;
+}
+
+.query-table #content-table table #content .int-btn{
+    margin: 5px 10px;
 }
