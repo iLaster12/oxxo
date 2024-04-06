@@ -40,7 +40,7 @@
 
                     <h3>Codigo:</h3>
 
-                    <input id="assets-code" type="text" placeholder="Codigo" name="assets-code">
+                    <input id="assets-code" type="number" placeholder="Codigo" name="assets-code">
                     
                     <button type="button" id="search"><img src="assets/images/search_icon.png" alt=""></button>
                     <button type="submit" id="clean"><img src="assets/images/clear_icon.jpg" alt=""></button>

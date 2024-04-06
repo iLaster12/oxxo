@@ -86,3 +86,9 @@
 .query-table #content-table table #content .int-btn{
     margin: 5px 10px;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
