@@ -19,6 +19,7 @@
     //Login Error
     if(mysqli_num_rows($loginValidation) > 0){
         $_SESSION['user'] = $uname;
+        $_SESSION['time'] = time();
         header("location: ../../queryAssets.php");
         exit;
     }else{

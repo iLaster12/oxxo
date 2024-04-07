@@ -69,7 +69,21 @@
 
             </div>
         </div>
-
+        
+        <form action="" id="delete-form">
+            <table id="delete-table">
+                <th><span>Razon de baja:</span></th>
+                <th><textarea name="delete-reazon" id="delete-reazon" cols="30" rows="10" required></textarea></th>
+                <th>
+                    <button type="button" id="delete-confirm">Confirmar</button>
+                    <button type="button" id="cancel-confirm">Cancelar</button>
+                </th>
+            </table>
+            
+            
+            
+            
+        </form>
         <script>
 
             document.getElementById("search").addEventListener("click", getData)

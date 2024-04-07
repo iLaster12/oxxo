@@ -17,11 +17,11 @@
     if ($input != null && $num_rows > 0) {
         while( $row = $result -> fetch_assoc()){
         $html .= '<tr>';
-        $html .= '<td>'.$row['Code'].'</td>';
-        $html .= '<td>'.$row['Brand'].'</td>';
-        $html .= '<td>'.$row['Model'].'</td>';
-        $html .= '<td>'.$row['Description'].'</td>';
-        $html .= '<td>'.$row['Remaining'].'</td>';
+        $html .= '<td id="td-code">'.$row['Code'].'</td>';
+        $html .= '<td id="td-brand">'.$row['Brand'].'</td>';
+        $html .= '<td id="td-model">'.$row['Model'].'</td>';
+        $html .= '<td id="td-description">'.$row['Description'].'</td>';
+        $html .= '<td id="td-remaining">'.$row['Remaining'].'</td>';
         $html .= '<td><button class = int-btn>Eliminar <button class = int-btn>Cambiar</td>';
         $html .= '</tr>';
         }

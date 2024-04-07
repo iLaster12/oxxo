@@ -4,7 +4,7 @@
     include 'dbConnection.php';
 
     //checking the loged user
-    $uname = ($_SESSION['user']);
+    $uname = $_SESSION['user'];
 
     $query = "SELECT firstName FROM users WHERE username = '$uname'";
 

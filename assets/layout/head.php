@@ -17,6 +17,19 @@
         //header('location: index.php');
         session_destroy();
         die();
+    }else{
+        if((time() - $_SESSION['time'] >  (15*60))){
+            echo '
+                <script>
+                    alert("Tiempo de inactividad maxima alcanzado");
+                    window.location = "index.php";
+                </script>
+            ';
+            session_destroy();
+        }
+        else{
+            $_SESSION["time"] = time();
+        }
     }
 
    include("./assets/php/common.php");
