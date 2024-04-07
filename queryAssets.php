@@ -70,7 +70,7 @@
             </div>
         </div>
         
-        <form action="" id="delete-form">
+        <form action="" id="delete-form" class="delete-form-hide">
             <table id="delete-table">
                 <th><span>Razon de baja:</span></th>
                 <th><textarea name="delete-reazon" id="delete-reazon" cols="30" rows="10" required></textarea></th>
@@ -87,4 +87,5 @@
 
     </body>
     <script src="assets/js/assetsLoad.js"></script>
+    <script src="assets/js/assetsDelete.js"></script>
 </html>

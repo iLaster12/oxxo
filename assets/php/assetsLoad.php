@@ -22,7 +22,7 @@
         $html .= '<td id="td-model">'.$row['Model'].'</td>';
         $html .= '<td id="td-description">'.$row['Description'].'</td>';
         $html .= '<td id="td-remaining">'.$row['Remaining'].'</td>';
-        $html .= '<td><button class = int-btn>Eliminar <button class = int-btn>Cambiar</td>';
+        $html .= '<td><button class = int-btn id = "delete-btn">Eliminar <button class = int-btn id = "change-btn">Cambiar</td>';
         $html .= '</tr>';
         }
     }else{

@@ -96,3 +96,11 @@ input::-webkit-inner-spin-button {
 #delete-form{
     margin: 15px;
 }
+
+.delete-form-hide{
+    display: none;
+}
+
+.delete-form-show{
+    display: flex;
+}

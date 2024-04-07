@@ -3,7 +3,7 @@ const input_btn = document.getElementById("search")
     input_btn.addEventListener("click", getData)
 
     function getData(){
-        let input = document.getElementById("assets-code").value;
+        let input = document.getElementById("assets-code").value
         let contet = document.getElementById("content")
 
         let url = "assets/php/assetsLoad.php"
